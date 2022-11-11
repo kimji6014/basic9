@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Yeon+Sung&display=swap');
+
+/* font-family: 'Cute Font', cursive;
+font-family: 'Yeon Sung', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치매약:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.전체 {
+    background-color: yellowgreen;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 첫째------------------------------------------------/ */
+.전체 .첫째 {
+    background-color: rgb(193, 63, 63);
+    padding: 20px;
+}
+
+.전체 .첫째 .첫자손 {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+
+.전체 .첫째 .첫자손.첫자식1 {
+    position: relative;
+    background-color: violet;
+    font-family: 'Cute Font', cursive;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 {
+    position: relative;
+    background-color: cyan;
+    background-image: url(https://img.megabox.co.kr/SharedImg/2022/09/23/0u3Hu4X0ReabBrmv90dPgHwRJNqeAVjD_1100.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 3px 5px;
+    transform: translate(-50%, -50%);
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 {
+    position: absolute;
+    /* left: 0; top: 0; width: 100%; height: 100%; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://img.megabox.co.kr/SharedImg/2022/09/23/igAmnOkTijIUx8HNQlJh17bxuKTP9kYo_1100.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    transform: translate(100%);
+}
+
+.전체 .첫째 .첫자손.첫자식1:hover .상 {
+    transform: translate(0%);
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    color: darkblue;
+}
+
+/* -----------------------------------------------첫자식1 */
+
+/* 첫자식2------------------------------------------------- */
+.전체 .첫째 .첫자손.첫자식2 {
+    position: relative;
+    background-color: sienna;
+    font-family: 'Cute Font', cursive;
+    height: 200px;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상하 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    color: black;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상 {
+    z-index: 2;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86323/86323207300_727.jpeg);
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.전체 .첫째 .첫자손.첫자식2:hover .상 {
+    transform: translateY(0%);
+}
+
+.전체 .첫째 .첫자손.첫자식2 .하 {
+    z-index: 1;
+    /* z-index는 레이어를 위로 올리는것과 동일
+    z-index는 position이 있어야 적용됨 */
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86323/86323207295_727.jpeg);
+}
+
+/* ---------------------------------------------첫자식2 */
+
+/* 첫자식3------------------------------------------------- */
+
+.전체 .첫째 .첫자손.첫자식3 {
+    position: relative;
+    background-color: royalblue;
+    font-family: 'Yeon Sung', cursive;
+    height: 200px;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .상하 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .상하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    color: brown;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .상 {
+    z-index: 2;
+    background-image: url(https://img.megabox.co.kr/SharedImg/2022/09/23/LqrJDckxP9zBB6fUOvHqPbqBs6c6EMV3_1100.jpg);
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.전체 .첫째 .첫자손.첫자식3:hover .상 {
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .하 {
+    z-index: 1;
+    background-image: url(https://img.megabox.co.kr/SharedImg/2022/09/23/gvxttZI78aTT4SbUc8Kwm3g6Ccelrgdn_1100.jpg);
+}
+
+/* ------------------------------------------------첫자식3 */
+
+/* 첫자식4------------------------------------------------ */
+
+.전체 .첫째 .첫자손.첫자식4 {
+    position: relative;
+    background-color: darkgoldenrod;
+    font-family: 'Yeon Sung', cursive;
+    margin-right: 0%;
+    height: 200px;
+    overflow: hidden;
+}
+.전체 .첫째 .첫자손.첫자식4 .비디오{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.전체 .첫째 .첫자손.첫자식4 .비디오 video{
+    width: 100%;
+}
+.전체 .첫째 .첫자손.첫자식4 h4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 110px);
+    color: black;
+}
+.전체 .첫째 .첫자손.첫자식4:hover h4{
+    animation: mymove 2s both;
+}
+
+@keyframes mymove {
+    0% {transform: translate(-50%,110px);}
+    100% {transform: translate(-50%,-130px);}
+  }
+
+/* ---------------------------------------------------첫자식4 */
+
+/* -----------------------------------------------------첫째 */
